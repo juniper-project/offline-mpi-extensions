@@ -16,11 +16,23 @@
         <tag>HEAD</tag>
         <url>http://127.0.0.1/dummy</url>
     </scm>
+
+	<repositories>
+		<repository>
+			<id>juniper-mvn-repo</id>
+			<url>https://github.com/juniper-project/mvn-repo/raw/master/repository</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories> 
+
 	<dependencies>
 		<dependency>
 			<groupId>eu.juniper</groupId>
-			<artifactId>platform</artifactId>
-			<version>0.1.20141215_180531</version>
+			<artifactId>juniperplatform</artifactId>
+			<version>1.0</version> 
 		</dependency>
 	</dependencies>
 	<!-- // Build // -->
